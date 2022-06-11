@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="header py-5 items-center">
+        <div class="flex justify-end">
+          <button id="button" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 block mb-2" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        <div class="md:flex md:justify-end shadow-xl md:shadow-none">
+          <ul id="menu" class="hidden md:flex md:space-x-10 space-y-5 md:space-y-0 p-5 md:p-0">
+            <li class="border-t-[3px] md:border-none pt-4"><a href="index.html"
+                class="text-xl font-bold hover:text-red-600">Home</a>
+            </li>
+            <li class="border-t-[3px] md:border-none pt-4"><a href="works.html"
+                class="text-xl font-bold hover:text-red-600">Works</a>
+            </li>
+            <li class="border-t-[3px] md:border-none pt-4"><a href="blog.html"
+                class="text-xl font-bold hover:text-red-600">Blog</a></li>
+            <li class="border-t-[3px] md:border-none pt-4"><a href=""
+                class="text-xl font-bold hover:text-red-600">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="profile mt-20">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="md:col-span-2 order-2 md:order-1 space-y-5">
+            <h1 class=" text-[44px] font-bold max-w-md text-center md:text-left mx-auto md:mx-0">Hi, I am Hong Son,
+              Creative Technologist</h1>
+            <p class="text-base font-medium text-center md:text-left">Amet minim mollit non
+              deserunt ullamco est sit
+              aliqua dolor do
+              amet
+              sint. Velit officia consequat duis
+              enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button href=""
+              class="block md:inline text-xl font-medium text-white bg-[#FF6464] rounded-sm px-3 py-2 mx-auto">Download
+              Resume</button>
+          </div>
+          <div class="col-span-1 order-1 md:order-2 mx-auto">
+            <img
+              src="https://res.cloudinary.com/freelencer/image/upload/v1654443774/ASSIGNMENT-WEB2022/11zon_cropped_tshpil.png"
+              alt="" class="max-w-[243px] min-h-[243px]">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" bg-[#EDF7FA]">
+    <div class="max-w-4xl mx-auto mt-10 py-5 px-5">
+      <div class="flex justify-between items-center">
+        <h3 class="text-[22px] font-medium">Recent posts</h3>
+        <a href="" class="text-[#00A8CC] text-base font-medium">View all</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-5">
+        <div class="bg-white p-5 space-y-5">
+          <a href="" class="text-[26px] font-bold">Making a design system from scratch</a>
+          <div class="flex space-x-5 items-center">
+            <span class="text-lg">12 Feb 2020</span>
+            <svg width="2" height="21" viewBox="0 0 2 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0V21" stroke="black" />
+            </svg>
+            <span class="text-lg">Design, Pattern</span>
+          </div>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="bg-white p-5 space-y-5">
+          <a href="" class="text-[26px] font-bold">Making a design system from scratch</a>
+          <div class="flex space-x-5 items-center">
+            <span class="text-lg">12 Feb 2020</span>
+            <svg width="2" height="21" viewBox="0 0 2 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0V21" stroke="black" />
+            </svg>
+            <span class="text-lg">Figma, Icon Design</span>
+          </div>
+          <p class="text-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white">
+    <div class="max-w-4xl mx-auto px-5">
+      <div class="">
+        <h3 class="text-[22px] font-medium my-5 text-center md:text-left">Featured works</h3>
+      </div>
+      <div class="content" id="contents">
+      </div>
+    </div>
+  </div>
+  <div class="bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex space-x-10 justify-center mt-32">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.8477 13.6211H19.0156V11.0469H23.8477H24.3477V10.5469V5.27344V4.77344H23.8477H18.5156C15.3315 4.77344 12.7422 7.36279 12.7422 10.5469V13.6211H9.72656H9.22656V14.1211V19.3945V19.8945H9.72656H12.7422V29.5H4.39453C2.24773 29.5 0.5 27.7523 0.5 25.6055V4.39453C0.5 2.24773 2.24773 0.5 4.39453 0.5H25.6055C27.7523 0.5 29.5 2.24773 29.5 4.39453V25.6055C29.5 27.7523 27.7523 29.5 25.6055 29.5H19.0156V19.8945H22.9688H23.3923L23.4619 19.4767L24.3409 14.2033L24.4379 13.6211H23.8477Z"
+            fill="#21243D" stroke="black" />
+        </svg>
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.7209 0H8.27874C3.71384 0 0 3.71402 0 8.27892V21.7211C0 26.2862 3.71384 30 8.27874 30H21.7209C26.2862 30 30 26.286 30 21.7211V8.27892C30.0002 3.71402 26.2862 0 21.7209 0ZM27.3384 21.7211C27.3384 24.8185 24.8185 27.3383 21.7211 27.3383H8.27874C5.18153 27.3384 2.66175 24.8185 2.66175 21.7211V8.27892C2.66175 5.18171 5.18153 2.66175 8.27874 2.66175H21.7209C24.8183 2.66175 27.3383 5.18171 27.3383 8.27892V21.7211H27.3384Z"
+            fill="#21243D" />
+          <path
+            d="M15 7.27014C10.7375 7.27014 7.26978 10.7379 7.26978 15.0004C7.26978 19.2627 10.7375 22.7303 15 22.7303C19.2625 22.7303 22.7303 19.2627 22.7303 15.0004C22.7303 10.7379 19.2625 7.27014 15 7.27014ZM15 20.0683C12.2054 20.0683 9.93152 17.7949 9.93152 15.0002C9.93152 12.2054 12.2052 9.93171 15 9.93171C17.7948 9.93171 20.0685 12.2054 20.0685 15.0002C20.0685 17.7949 17.7947 20.0683 15 20.0683Z"
+            fill="#21243D" />
+          <path
+            d="M23.0545 5.01318C22.5417 5.01318 22.0379 5.2208 21.6757 5.58457C21.3118 5.94657 21.1025 6.45053 21.1025 6.96513C21.1025 7.47814 21.3119 7.98192 21.6757 8.34569C22.0377 8.70769 22.5417 8.91708 23.0545 8.91708C23.5691 8.91708 24.0713 8.70769 24.435 8.34569C24.7988 7.98192 25.0064 7.47796 25.0064 6.96513C25.0064 6.45053 24.7988 5.94657 24.435 5.58457C24.073 5.2208 23.5691 5.01318 23.0545 5.01318Z"
+            fill="#21243D" />
+        </svg>
+        <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M36.9231 3.55154C35.55 4.15385 34.0869 4.55308 32.5615 4.74692C34.1308 3.81 35.3285 2.33769 35.8915 0.563077C34.4285 1.43538 32.8131 2.05154 31.0915 2.39538C29.7023 0.916154 27.7223 0 25.5623 0C21.3715 0 17.9977 3.40154 17.9977 7.57154C17.9977 8.17154 18.0485 8.74846 18.1731 9.29769C11.88 8.99077 6.31154 5.97462 2.57077 1.38C1.91769 2.51308 1.53462 3.81 1.53462 5.20615C1.53462 7.82769 2.88462 10.1515 4.89692 11.4969C3.68077 11.4738 2.48769 11.1208 1.47692 10.5646C1.47692 10.5877 1.47692 10.6177 1.47692 10.6477C1.47692 14.3262 4.10077 17.3815 7.54154 18.0854C6.92538 18.2538 6.25385 18.3346 5.55692 18.3346C5.07231 18.3346 4.58308 18.3069 4.12385 18.2054C5.10462 21.2031 7.88769 23.4069 11.1969 23.4785C8.62154 25.4931 5.35154 26.7069 1.81154 26.7069C1.19077 26.7069 0.595385 26.6792 0 26.6031C3.35308 28.7654 7.32692 30 11.6123 30C25.5415 30 33.1569 18.4615 33.1569 8.46C33.1569 8.12538 33.1454 7.80231 33.1292 7.48154C34.6315 6.41538 35.8938 5.08385 36.9231 3.55154Z"
+            fill="#21243D" />
+        </svg>
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M25.6055 0H4.39453C1.97159 0 0 1.97159 0 4.39453V25.6055C0 28.0284 1.97159 30 4.39453 30H25.6055C28.0284 30 30 28.0284 30 25.6055V4.39453C30 1.97159 28.0284 0 25.6055 0ZM10.6055 23.7891H7.08984V11.4844H10.6055V23.7891ZM10.6055 9.72656H7.08984V6.21094H10.6055V9.72656ZM22.9102 23.7891H19.3945V16.7578C19.3945 15.7887 18.6058 15 17.6367 15C16.6676 15 15.8789 15.7887 15.8789 16.7578V23.7891H12.3633V11.4844H15.8789V12.147C16.7999 11.8607 17.3982 11.4844 18.5156 11.4844C20.8999 11.4869 22.9102 13.6258 22.9102 16.1536V23.7891Z"
+            fill="#21243D" />
+        </svg>
+      </div>
+      <span class="text-md text-center block my-5">Copyright ©2020 All rights reserved </span>
+    </div>
+  </div>
+  <script>
+    const menu = document.getElementById("menu");
+    const button = document.getElementById("button");
+
+    button.addEventListener("click", function () {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
